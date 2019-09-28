@@ -66,15 +66,13 @@ export class Slider extends Component {
     const { images, currentImageIndex, size, radius } = this.state;
     return (
       <div className="container">
-        <div className="row justify-content-end">
-          <div className="col-sm mt-4">
+        <div className="row justify-content-end">        
             <Window
               images={images}
               size={size}
               radius={radius}
               currentImageIndex={currentImageIndex}
             />
-          </div>
           <div className="col-sm mt-4 ml-3">
             <Input
               handler={this.sizeHandler}
