@@ -81,8 +81,9 @@ export class Slider extends Component {
             />
             <Input
               handler={this.radiusHandler}
-              placeholder={"Border Radius"}
+              placeholder={"Corner Radius"}
               type={"number"}
+              units='px'
             />
             <div className="row justify-content-start">
               <Button name={"ADD SQUARE"} handler={this.addImage} />
